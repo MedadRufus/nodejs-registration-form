@@ -10,7 +10,7 @@ mongoose.connect(process.env.DATABASE, {useNewUrlParser: true, useUnifiedTopolog
 mongoose.promise = global.promise
 mongoose.connection
 .on('connected', () => {
-    console.log(`mongooose conncetion open on ${process.env.DATABASE}`);
+    console.log(`mongooose connection open on ${process.env.DATABASE}`);
 })
 .on('error', (err) => {
     console.log(`connection error ${err.message}`)
