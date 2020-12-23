@@ -17,7 +17,7 @@ A simple registration form with basic validation
  4. Create a `.env` file in the project root with database connection details
   * If you’re running Mongo locally: DATABASE=mongodb://localhost:27017/registration-form
  5. Run `npm run watch`
- 6. Visit http://localhost:3000 to create a new registration
+ 6. Visit http://localhost:8000 to create a new registration
  
 ## Licence 
 The MIT License (MIT)
