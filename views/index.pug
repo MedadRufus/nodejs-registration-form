@@ -8,7 +8,10 @@ block content
   ) Download as CSV
 
   if message.length
-    table.listing-table.table-dark.table-striped
+    table(
+      class="table-light table-striped"
+      width="100%"
+    )
       tr
         th topic
         th message
