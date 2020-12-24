@@ -40,10 +40,10 @@ router.post(
   }
 );
 
-router.get('/registrations', auth.connect(basic), (req,res) => {
+router.get('/message', auth.connect(basic), (req,res) => {
   Registration.find()
-  .then((registrations) =>{
-    res.render('index', {title: 'listing registration', registrations});
+  .then((message) =>{
+    res.render('index', {title: 'listing registration', message});
   })
 .catch(() =>{res.send('Sorry! Something went wrong');})
 

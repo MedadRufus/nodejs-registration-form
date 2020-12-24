@@ -3,17 +3,14 @@
 const mongoose = require('mongoose');
 
 const registrationSchema = new mongoose.Schema({
-    firstname: {
+    topic: {
         type: String,
         trim: true,
     },
-    lastname: {
+    message: {
         type: String,
         trim: true,
     },
-    email: {
-        type: String,
-        trim: true
-    },
+
 })
 module.exports = mongoose.model('Registration', registrationSchema)
