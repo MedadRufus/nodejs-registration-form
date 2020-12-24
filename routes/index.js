@@ -43,7 +43,7 @@ router.post(
 router.get('/message', auth.connect(basic), (req,res) => {
   Registration.find()
   .then((message) =>{
-    res.render('index', {title: 'listing registration', message});
+    res.render('index', {title: 'listing data', message});
   })
 .catch(() =>{res.send('Sorry! Something went wrong');})
 
