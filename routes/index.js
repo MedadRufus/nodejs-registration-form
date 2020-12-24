@@ -5,6 +5,8 @@ const auth = require('http-auth');
 const router = express.Router();
 const { body } = require('express-validator');
 const homeController = require('../controllers/homeController');
+const viewDataController = require('../controllers/viewDataController');
+
 const Registration = mongoose.model('Registration');
 
 const basic = auth.basic({
@@ -15,6 +17,8 @@ const basic = auth.basic({
 //ALTER THE ROUTE TO USE OUT NEW TEMLPLATE
 
 router.get('/', homeController.home);
+router.get('/view_data', viewDataController.home);
+
 
 
 router.post(
