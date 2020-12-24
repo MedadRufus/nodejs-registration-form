@@ -9,31 +9,34 @@ block content
         li= error.msg
 
   form(action="." method="POST" class="form-registration")
-    label(for="firstname") First Name:
+    label(for="firstname") MQTT ID:
     input(
       type="text"
       id="firstname"
       name="firstname"
       class="form-control"
       value=data.firstname
+      placeholder="icss_lora_tracker"
     )
 
-    label(for="lastname") Last Name:
+    label(for="lastname") MQTT Password:
     input(
       type="text"
       id="lastname"
       name="lastname"
       class="form-control"
       value=data.lastname
+      placeholder="ttn-account-v2.oSgYNk6D6zz9PD58MF62Df-GJk-vbOM_q8RXdKRaeR8"
     )
     
-    label(for="email") Email:
+    label(for="email") MQTT server address:
     input(
       type="email"
       id="email"
       name="email"
       class="form-control"
       value=data.email
+      placeholder="eu.thethings.network:1883"
     )
     
     input(
