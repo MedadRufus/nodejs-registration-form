@@ -66,6 +66,7 @@ const download = (request, response) =>{
   // The transformer function
   const transformer = (doc)=> {
     return {
+        _id: doc._id,
         topic: doc.topic,
         message: doc.message,
     };
