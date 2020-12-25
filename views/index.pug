@@ -1,16 +1,17 @@
 extends layout
 
 block content
-  button(
-    onclick='#{something()}'
-    type="submit"
-    class="btn btn-lg btn-primary btn-block"
-  ) Download as CSV
+  form(method="get" action="file.doc")
+    button(
+      id="myButton"
+      class="btn btn-lg btn-primary btn-block"
+    ) Download as CSV
 
   if message.length
     table(
-      class="table-light table-striped"
-      width="100%"
+      class="table-light table-striped table-hover"
+      width="10%"
+      table-layout="fixed"
     )
       tr
         th topic
