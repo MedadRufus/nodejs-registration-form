@@ -27,7 +27,7 @@ router.post(
     body('firstname')
       .isLength({ min: 1 })
       .withMessage('Please enter first name'),
-      body('lastname')
+    body('lastname')
       .isLength({ min: 1 })
       .withMessage('Please enter last name'),
     body('email')
