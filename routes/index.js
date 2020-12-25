@@ -6,9 +6,9 @@ const router = express.Router();
 const { body } = require('express-validator');
 const homeController = require('../controllers/homeController');
 const viewDataController = require('../controllers/viewDataController');
+var csv = require('csv');
 
 const Registration = mongoose.model('Registration');
-var csv = require('csv');
 
 const basic = auth.basic({
   file: path.join(__dirname, '../users.htpasswd'),
